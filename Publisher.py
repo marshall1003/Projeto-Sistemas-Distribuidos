@@ -2,7 +2,7 @@ from http import client
 from pydoc import cli
 #from telnetlib import IP
 import time
-from paho.mqtt import paho.mqtt.client as mqtt
+import paho. as mqtt
 
 AVAILABLE_PORTS = [7000, 7001, 7002, 7003]
 IP_MAQUINA = '192.168.0.1'
