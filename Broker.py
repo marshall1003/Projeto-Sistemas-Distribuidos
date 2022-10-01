@@ -1,7 +1,8 @@
 import paho.mqtt.client as mqtt
  
 def on_connect(client, userdata, flags, rcode):
-    print("Conectado a", str(rcode))
+    if rcode == 0 :
+        print("Conectado e pronto pra trabalhar!")
 
 def broker():
     client = mqtt.Client()

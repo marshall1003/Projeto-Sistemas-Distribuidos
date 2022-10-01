@@ -1,0 +1,6 @@
+FROM python:3.8-slim-buster
+WORKDIR /mydir
+COPY requirements.txt requirements.txt
+COPY Client_CDD.py Client_CDD.py
+RUN pip install -r requirements.txt
+ENTRYPOINT [ "python","-u","Client_CDD.py"]

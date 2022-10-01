@@ -1,0 +1,6 @@
+FROM python:3.8-slim-buster
+WORKDIR /mydir
+COPY requirements.txt requirements.txt
+COPY Client_Lojas.py Client_Lojas.py
+RUN pip install -r requirements.txt
+ENTRYPOINT [ "python","-u","Client_Lojas.py"]
