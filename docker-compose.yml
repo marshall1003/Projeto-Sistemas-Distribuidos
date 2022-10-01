@@ -1,0 +1,31 @@
+version: "3"
+services:
+  loja0:
+    image: docker_loja
+    restart: unless-stopped
+    command: "0"
+  loja1:
+    image: docker_loja
+    restart: unless-stopped
+    command: "1"
+  loja2:
+    image: docker_loja
+    restart: unless-stopped
+    command: "2"
+  loja3:
+    image: docker_loja
+    restart: unless-stopped
+    command: "3"
+  loja4:
+    image: docker_loja
+    restart: unless-stopped
+    command: "4"
+  loja5:
+    image: docker_loja
+    restart: unless-stopped
+    command: "5"
+  CDD:
+    image: docker_CDD
+    restart: unless-stopped
+    command: "6"
+  
