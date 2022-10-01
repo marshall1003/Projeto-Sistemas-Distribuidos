@@ -1,6 +1,7 @@
 FROM python:3-buster
 WORKDIR /mydir
-COPY requirements.txt requirements.txt
+COPY requisitos.txt requisitos.txt
 COPY Client_CDD.py Client_CDD.py
-RUN pip install -r requirements.txt
+COPY Produtos.py Produtos.py
+RUN pip install -r requisitos.txt
 ENTRYPOINT [ "python","-u","Client_CDD.py"]
